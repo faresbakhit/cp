@@ -1,4 +1,4 @@
-# Competitive Programming: The Archive
+# Competitive Programming
 
 An archive of my competitive programming journey, with the\
 solutions I have come up with and submitted to the judges
