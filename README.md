@@ -1,6 +1,6 @@
-# Competitive Programming
+# Competitive Programming: The Archive
 
-An archive of my competitive programming journey, with the
+An archive of my competitive programming journey, with the\
 solutions I have come up with and submitted to the judges
 
 ## CSES Problem Set<sub>[[?]](#references)</sub>
