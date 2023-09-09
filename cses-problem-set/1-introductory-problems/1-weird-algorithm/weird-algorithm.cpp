@@ -1,6 +1,3 @@
-// Problem: Weird Algorithm
-// Webpage: https://cses.fi/problemset/task/1068
-
 #include <iostream>
 
 using namespace std;

@@ -1,6 +1,3 @@
-// Problem: Missing Number
-// Webpage: https://cses.fi/problemset/task/1083
-
 #include <iostream>
 #include <sstream>
 
