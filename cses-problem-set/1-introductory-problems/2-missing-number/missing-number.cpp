@@ -1,24 +1,21 @@
-#include <iostream>
-#include <sstream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 int main()
 {
-    unsigned long long int n;
-    (void)scanf("%llu\n", &n);
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    uint64_t n;
+    cin >> n;
     n = n * (n + 1) >> 1;
 
-    string s;
-    getline(cin, s);
-    istringstream iss(s);
-    unsigned int i;
-
-    while (iss >> i) {
+    uint32_t i;
+    while (cin >> i) {
         n -= i;
     }
 
-    cout << n << "\n";
-
+    cout << n;
     return 0;
 }

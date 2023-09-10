@@ -1,10 +1,13 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 int main(void)
 {
-    unsigned long long n;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    uint64_t n;
     cin >> n;
 
     while (n != 1) {
@@ -12,11 +15,10 @@ int main(void)
         if (n & 1) {
             n = 3 * n + 1;
         } else {
-            n >>= 2;
+            n >>= 1;
         }
     }
 
-    cout << "1\n";
-
+    cout << 1;
     return 0;
 }

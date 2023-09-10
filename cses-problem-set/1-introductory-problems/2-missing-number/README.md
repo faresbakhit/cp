@@ -1,4 +1,4 @@
-# [Missing Number](https://cses.fi/problemset/task/1083)
+# Missing Number<sub>[[source]](https://cses.fi/problemset/task/1083)</sub>
 
 You are given all numbers between $1,2,\ldots,n$ except one. Your task is to find the missing number.
 
