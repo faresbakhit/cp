@@ -18,10 +18,8 @@ Print the minimum number of moves.
 
 - $1 \le n \le 2 \cdot 10^5$
 - $1 \le x_i \le 10^9$
-- Time limit: 1.00 s
-- Memory limit: 512 MB
 
-## Example
+## Examples
 
 Input:
 

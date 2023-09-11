@@ -15,10 +15,8 @@ Print the missing number.
 ## Constraints
 
 - $2 \le n \le 2 \cdot 10^5$
-- Time limit: 1.00 s
-- Memory limit: 512 MB
 
-## Example
+## Examples
 
 Input:
 

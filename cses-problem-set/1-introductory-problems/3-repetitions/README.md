@@ -13,10 +13,8 @@ Print one integer: the length of the longest repetition.
 ## Constraints
 
 - $1 \le n \le 10^6$
-- Time limit: 1.00 s
-- Memory limit: 512 MB
 
-## Example
+## Examples
 
 Input:
 

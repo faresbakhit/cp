@@ -19,10 +19,8 @@ Print a line that contains all values of $n$ during the algorithm.
 ## Constraints
 
 - $1 \le n \le 10^6$
-- Time limit: 1.00 s
-- Memory limit: 512 MB
 
-## Example
+## Examples
 
 Input:
 
