@@ -11,6 +11,7 @@ solutions I have come up with and submitted to the judges
 2. [Missing Number](/cses-problem-set/1-introductory-problems/2-missing-number/)
 3. [Repetitions](/cses-problem-set/1-introductory-problems/3-repetitions/)
 4. [Increasing Array](/cses-problem-set/1-introductory-problems/4-increasing-array/)
+5. [Permutations](/cses-problem-set/1-introductory-problems/4-increasing-array/)
 
 ## Notes
 
