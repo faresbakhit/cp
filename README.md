@@ -7,14 +7,16 @@ solutions I have come up with and submitted to the judges
 
 ### Introductory Problems
 
-1. [Weird Algorithm](/cses-problem-set/1-introductory-problems/1-weird-algorithm/)
-2. [Missing Number](/cses-problem-set/1-introductory-problems/2-missing-number/)
-3. [Repetitions](/cses-problem-set/1-introductory-problems/3-repetitions/)
-4. [Increasing Array](/cses-problem-set/1-introductory-problems/4-increasing-array/)
-5. [Permutations](/cses-problem-set/1-introductory-problems/5-permutations/)
-6. [Number Spiral](/cses-problem-set/1-introductory-problems/6-number-spiral/)
-9. [Bit Strings](/cses-problem-set/1-introductory-problems/9-bit-strings/)
-10. [Trailing Zeros](/cses-problem-set/1-introductory-problems/10-trailing-zeros/)
+01. [Weird Algorithm](/cses-problem-set/01-introductory-problems/01-weird-algorithm/)
+02. [Missing Number](/cses-problem-set/01-introductory-problems/02-missing-number/)
+03. [Repetitions](/cses-problem-set/01-introductory-problems/03-repetitions/)
+04. [Increasing Array](/cses-problem-set/01-introductory-problems/04-increasing-array/)
+05. [Permutations](/cses-problem-set/01-introductory-problems/05-permutations/)
+06. [Number Spiral](/cses-problem-set/01-introductory-problems/06-number-spiral/)
+07. [Two Knights](/cses-problem-set/01-introductory-problems/07-two-knights/)
+08. [Two Sets](/cses-problem-set/01-introductory-problems/08-two-sets/)
+09. [Bit Strings](/cses-problem-set/01-introductory-problems/09-bit-strings/)
+10. [Trailing Zeros](/cses-problem-set/01-introductory-problems/10-trailing-zeros/)
 
 ## Notes
 
