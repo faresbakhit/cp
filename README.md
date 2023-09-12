@@ -106,8 +106,8 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 | *Bitwise XOR*          | `a ^ b`      | `\oplus` | $x \oplus y$ |
 | *Bitwise left shift*   | `a << b`     | `\ll`    | $x \ll n$    |
 | *Bitwise right shift*  | `a >> b`     | `\gg`    | $x \gg n$    |
-| *Bitwise left rotate*  |              | `lll`    | $x \lll n$   |
-| *Bitwise right rotate* |              | `ggg`    | $x \ggg n$   |
+| *Bitwise left rotate*  |              | `\lll`   | $x \lll n$   |
+| *Bitwise right rotate* |              | `\ggg`   | $x \ggg n$   |
 
 ### Rust and C++ Equivalent Types<sub>[[source]](https://blog.stratifylabs.dev/device/2023-01-28-From-cpp-to-rust)</sub>
 
