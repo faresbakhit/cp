@@ -29,37 +29,37 @@ solutions I have come up with and submitted to the judges
 
 #### Change the $n$-th bit
 
-- Set $x \lor (1 \ll n)$
-- Unset $x \land \lnot(1 \ll n)$
-- Toggle $x \oplus (1 \ll n)$
+- set — $x \lor (1 \ll n)$
+- unset — $x \land \lnot(1 \ll n)$
+- toggle — $x \oplus (1 \ll n)$
 
 #### Is a power of $2$
 
-$f_1(x) = x \land (x - 1)$
+$$f_1(x) = x \land (x - 1)$$
 
-$
+$$
 f_2(x) =
 \begin{cases}
   \top & x = 0 \\
   \bot & x \neq 0
 \end{cases}
-$
+$$
 
-$f(x) = (f_2 \circ f_1)(x)$
+$$f(x) = (f_2 \circ f_1)(x)$$
 
 #### Is the $n$-th bit set
 
-$f_1(x) = x \land (1 \ll n)$
+$$f_1(x) = x \land (1 \ll n)$$
 
-$
+$$
 f_2(x) =
 \begin{cases}
 \top & x \neq 0 \\
 \bot & x = 0
 \end{cases}
-$
+$$
 
-$f(x, n) = (f_2 \circ f_1)(x, n)$
+$$f(x, n) = (f_2 \circ f_1)(x, n)$$
 
 ### How-to $\TeX$ Algorithms
 
