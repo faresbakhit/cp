@@ -3,7 +3,9 @@
 An archive of my competitive programming journey, with the\
 solutions I have come up with and submitted to the judges
 
-## CSES Problem Set<sub>[[?]](https://cses.fi/problemset/list/)</sub>
+## CSES Problem Set[^1]
+
+[^1]: [CSES Problem Set](https://cses.fi/problemset/list/)
 
 ### Introductory Problems
 
@@ -20,20 +22,20 @@ solutions I have come up with and submitted to the judges
 
 ## Notes
 
-### Bit Manipulation Hacks
+### Bit manipulation algorithms
 
-#### Multiply or divide by $2^k$
+#### Multiply or divide by $2^k$ $:$
 
 - $x \cdot 2^k = x \ll k$
 - $x / 2^k = x \gg k$
 
-#### Change the $n$-th bit
+#### Change the $n$-th bit $:$
 
 - set — $x \lor (1 \ll n)$
 - unset — $x \land \lnot(1 \ll n)$
 - toggle — $x \oplus (1 \ll n)$
 
-#### Is a power of $2$
+#### Is a power of $2$ $?$
 
 $$f_1(x) = x \land (x - 1)$$
 
@@ -47,7 +49,7 @@ $$
 
 $$f(x) = (f_2 \circ f_1)(x)$$
 
-#### Is the $n$-th bit set
+#### Is the $n$-th bit set $?$
 
 $$f_1(x) = x \land (1 \ll n)$$
 
@@ -61,7 +63,7 @@ $$
 
 $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 
-### How-to $\TeX$ Algorithms
+### How-to $\TeX$ algorithms
 
 #### Constants
 
@@ -71,7 +73,7 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 | false          | `\bot`  | $\bot$  |
 | pi             | `\pi`   | $\pi$   |
 
-#### Arithmetic Operations
+#### Arithmetic operations
 
 | Operation        | C/C++ Syntax    | Command     | Example       |
 |------------------|-----------------|-------------|---------------|
@@ -84,7 +86,7 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 | *Square Root*    |                 | `\sqrt{}`   | $\sqrt{x}$    |
 | $n$*-th root*    |                 | `\sqrt[]{}` | $\sqrt[n]{x}$ |
 
-#### Comparison Operations
+#### Comparison operations
 
 | Operation               | C/C++ Syntax | Command   | Example       |
 |-------------------------|--------------|-----------|---------------|
@@ -96,7 +98,7 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 | *Greater than or equal* | `a >= b`     | `\geq`    | $x \geq y$    |
 | *Less than or equal*    | `a <= b`     | `\leq`    | $x \leq y$    |
 
-#### Bitwise Operations
+#### Bitwise operations
 
 | Operation              | C/C++ Syntax | Command  | Example      |
 |------------------------|--------------|----------|--------------|
@@ -109,43 +111,24 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 | *Bitwise left rotate*  |              | `\lll`   | $x \lll n$   |
 | *Bitwise right rotate* |              | `\ggg`   | $x \ggg n$   |
 
-### Rust and C++ Equivalent Types<sub>[[source]](https://blog.stratifylabs.dev/device/2023-01-28-From-cpp-to-rust)</sub>
+### Numeric types[^2][^3]
 
-| C++       | Rust  | Size (C++/Rust) |
-|----------:|-------|-----------------|
-| bool      | bool  | varies/8-bit    |
-| char      | char  | 8-bit/32-bit    |
-| uint8_t   | u8    | 8-bit           |
-| uint16_t  | u16   | 16-bit          |
-| uint32_t  | u32   | 32-bit          |
-| uint64_t  | u64   | 64-bit          |
-| uint128_t | u128  | 128-bit         |
-| int8_t    | i8    | 8-bit           |
-| int16_t   | i16   | 16-bit          |
-| int32_t   | i32   | 32-bit          |
-| int64_t   | i64   | 64-bit          |
-| int128_t  | i128  | 128-bit         |
-| size_t    | isize | large-enough    |
-| ssize_t   | usize | large-enough    |
-| float     | f32   | 32-bit          |
-| double    | f64   | 64-bit          |
-| const     | char  | * &str varies   |
+[^2]: [Fundamental types](https://en.cppreference.com/w/cpp/language/types) - cppreference.com
+[^3]: [Numeric types](https://doc.rust-lang.org/reference/types/numeric.html) - The Rust Reference
 
-### Integer Types Limits<sub>[[source]](https://en.cppreference.com/w/cpp/language/types)</sub>
-
-| Type specifier | Approximate Value Range  | Exact Value Range |
-|---------------:|--------------------------|-------------------|
-| uint8_t        | $0 : 2^8$                | $0 : 255$         |
-| uint16_t       | $0 : 6.55 \cdot 10^4$    | $0 : 65535$       |
-| uint32_t       | $0 : 4.29 \cdot 10^9$    | $0 : 4,294,967,295$ |
-| uint64_t       | $0 : 1.84 \cdot 10^{19}$ | $0 : 18,446,744,073,709,551,615$ |
-| int8_t         | $\pm 2^7$                | $-128 : 127$      |
-| int16_t        | $\pm 3.27 \cdot 10^4$    | $-32768 : 32767$  |
-| int32_t        | $\pm 2.14 \cdot 10^9$    | $-2,147,483,648 : 2,147,483,647$ |
-| int64_t        | $\pm 9.22 \cdot 10^{18}$ | $-9,223,372,036,854,775,808 : 9,223372,036,854,775,807$ |
-
-## References
-
-- [CSES Problem Set](https://cses.fi/problemset/list/)
-- [Fundamental types](https://en.cppreference.com/w/cpp/language/types)
-- [From C++ to Rust](https://blog.stratifylabs.dev/device/2023-01-28-From-cpp-to-rust)
+| C/C++ type | Rust type | Size    | Minimum                   | Maximum                  |
+|-----------:|-----------|---------|---------------------------|--------------------------|
+| uint8_t    | u8        | 8-bit   | $0$                       | $2^{8}-1$                |
+| uint16_t   | u16       | 16-bit  | $0$                       | $2^{16}-1$               |
+| uint32_t   | u32       | 32-bit  | $0$                       | $2^{32}-1$               |
+| uint64_t   | u64       | 64-bit  | $0$                       | $2^{64}-1$               |
+|            | u128      | 128-bit | $0$                       | $2^{128}-1$              |
+| int8_t     | i8        | 8-bit   | $-2^{7}$                  | $2^{7}-1$                |
+| int16_t    | i16       | 16-bit  | $-2^{15}$                 | $2^{15}-1$               |
+| int32_t    | i32       | 32-bit  | $-2^{31}$                 | $2^{31}-1$               |
+| int64_t    | i64       | 64-bit  | $-2^{63}$                 | $2^{63}-1$               |
+|            | i128      | 128-bit | $-2^{127}$                | $2^{127}-1$              |
+| size_t     | isize     | arch    |                           |                          |
+| ssize_t    | usize     | arch    |                           |                          |
+| float      | f32       | 32-bit  | $-3.40282 \cdot 10^{38}$  | $3.40282 \cdot 10^{38}$  |
+| double     | f64       | 64-bit  | $-1.79769 \cdot 10^{308}$ | $1.79769 \cdot 10^{308}$ |
