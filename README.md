@@ -3,11 +3,26 @@
 An archive of my competitive programming journey, with the\
 solutions I have come up with and submitted to the judges
 
+- [CSES Problem Set](#cses-problem-set1)
+  - [Introductory problems](#introductory-problems)
+- [Notes](#notes)
+  - [Bit manipulation algorithms](#bit-manipulation-algorithms)
+    - [Multiply or divide by 2^k](#multiply-or-divide-by-2k-)
+    - [Change the n-th bit](#change-the-n-th-bit-)
+    - [Is a power of 2?](#is-a-power-of-2-)
+    - [Is the n-th bit set?](#is-the-n-th-bit-set-)
+  - [How-to TeX algorithms](#how-to-tex-algorithms)
+    - [Constants](#constants)
+    - [Arithmetic operations](#arithmetic-operations)
+    - [Comparison operations](#comparison-operations)
+    - [Bitwise operations](#bitwise-operations)
+  - [Numeric types](#numeric-types23)
+
 ## CSES Problem Set[^1]
 
 [^1]: [CSES Problem Set](https://cses.fi/problemset/list/)
 
-### Introductory Problems
+### Introductory problems
 
 01. [Weird Algorithm](/cses-problem-set/01-introductory-problems/01-weird-algorithm/)
 02. [Missing Number](/cses-problem-set/01-introductory-problems/02-missing-number/)
@@ -63,6 +78,8 @@ $$
 
 $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 
+---
+
 ### How-to $\TeX$ algorithms
 
 #### Constants
@@ -75,7 +92,7 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 
 #### Arithmetic operations
 
-| Operation        | C/C++ Syntax    | Command     | Example       |
+| Operation        | C/C++ syntax    | Command     | Example       |
 |------------------|-----------------|-------------|---------------|
 | *Addition*       | `a + b`         | `+`         | $x + y$       |
 | *Subtraction*    | `a - b`         | `-`         | $x - y$       |
@@ -88,7 +105,7 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 
 #### Comparison operations
 
-| Operation               | C/C++ Syntax | Command   | Example       |
+| Operation               | C/C++ syntax | Command   | Example       |
 |-------------------------|--------------|-----------|---------------|
 | *Equality*              | `a == b`     | `=`       | $x = y$       |
 | *Approximate-equality*  |              | `\approx` | $x \approx y$ |
@@ -100,9 +117,9 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 
 #### Bitwise operations
 
-| Operation              | C/C++ Syntax | Command  | Example      |
+| Operation              | C/C++ syntax | Command  | Example      |
 |------------------------|--------------|----------|--------------|
-| *Bitwise NOT*          | `~x`         | `\lnot`  | $\lnot x$     |
+| *Bitwise NOT*          | `~x`         | `\lnot`  | $\lnot x$    |
 | *Bitwise AND*          | `a & b`      | `\land`  | $x \land y$  |
 | *Bitwise OR*           | `a \| b`     | `\lor`   | $x \lor y$   |
 | *Bitwise XOR*          | `a ^ b`      | `\oplus` | $x \oplus y$ |
@@ -110,6 +127,8 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 | *Bitwise right shift*  | `a >> b`     | `\gg`    | $x \gg n$    |
 | *Bitwise left rotate*  |              | `\lll`   | $x \lll n$   |
 | *Bitwise right rotate* |              | `\ggg`   | $x \ggg n$   |
+
+---
 
 ### Numeric types[^2][^3]
 
