@@ -1,5 +1,7 @@
 # Competitive Programming
 
+This is a [hover text](https://www.google.com "your hover text") example.
+
 An archive of my competitive programming journey, with the\
 solutions I have come up with and submitted to the judges
 
@@ -148,17 +150,17 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 
 #### Constants
 
-| Constant                       | C/C++' `math.h` | Rust's `core::{f64, f32}::consts` | Command        | Example        |
-|--------------------------------|-----------------|-----------------------------------|----------------|----------------|
-| true                           | `true`          | `true`                            | `\top`         | $\top$         |
-| false                          | `false`         | `false`                           | `\bot`         | $\bot$         |
-| Archimedes' constant           | `M_PI`          | `PI`                              | `\pi`          | $\pi$          |
-| Euler's number                 | `M_E`           | `E`                               | `e`            | $e$            |
-| The full circle constant       |                 | `TAU`                             | `\tau`         | $\tau$         |
-| The logarithm to base 10 of e  | `M_LOG2E`       | `LOG2_E`                          | `\log_{2}{e}`  | $\log_{2}{e}$  |
-| The logarithm to base 10 of e  | `M_LOG10E`      | `LOG10_E`                         | `\log_{10}{e}` | $\log_{10}{e}$ |
-| The logarithm to base 2 of ten |                 | `LOG2_10`                         | `\log_{2}{10}` | $\log_{2}{10}$ |
-| The logarithm to base 10 of 2  |                 | `LOG10_2`                         | `\log_{10}{2}` | $\log_{10}{2}$ |
-| The natural logarithm of 2     | `M_LN2`         | `LN_2`                            | `\ln{2}`       | $\ln{2}$       |
-| The natural logarithm of 10    | `M_LN10`        | `LN_10`                           | `\ln{10}`      | $\ln{10}$      |
-| The square root of 2           | `M_SQRT2`       | `SQRT_2`                          | `\sqrt{2}`     | $\sqrt{2}$     |
+| Constant                       | [C/C++ Syntax](# "math.h/cmath") | [Rust Syntax](# "core::{f64, f32}::consts") | Command        | Example        |
+|:-------------------------------|----------------------------------|---------------------------------------------|----------------|----------------|
+| true                           | `true`                           | `true`                                      | `\top`         | $\top$         |
+| false                          | `false`                          | `false`                                     | `\bot`         | $\bot$         |
+| Archimedes' constant           | `M_PI`                           | `PI`                                        | `\pi`          | $\pi$          |
+| Euler's number                 | `M_E`                            | `E`                                         | `e`            | $e$            |
+| The full circle constant       |                                  | `TAU`                                       | `\tau`         | $\tau$         |
+| The logarithm to base 10 of e  | `M_LOG2E`                        | `LOG2_E`                                    | `\log_{2}{e}`  | $\log_{2}{e}$  |
+| The logarithm to base 10 of e  | `M_LOG10E`                       | `LOG10_E`                                   | `\log_{10}{e}` | $\log_{10}{e}$ |
+| The logarithm to base 2 of ten |                                  | `LOG2_10`                                   | `\log_{2}{10}` | $\log_{2}{10}$ |
+| The logarithm to base 10 of 2  |                                  | `LOG10_2`                                   | `\log_{10}{2}` | $\log_{10}{2}$ |
+| The natural logarithm of 2     | `M_LN2`                          | `LN_2`                                      | `\ln{2}`       | $\ln{2}$       |
+| The natural logarithm of 10    | `M_LN10`                         | `LN_10`                                     | `\ln{10}`      | $\ln{10}$      |
+| The square root of 2           | `M_SQRT2`                        | `SQRT_2`                                    | `\sqrt{2}`     | $\sqrt{2}$     |
