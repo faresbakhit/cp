@@ -6,17 +6,17 @@ solutions I have come up with and submitted to the judges
 - [CSES Problem Set](#cses-problem-set1)
   - [Introductory problems](#introductory-problems)
 - [Notes](#notes)
-  - [Bit manipulation algorithms](#bit-manipulation-algorithms)
+  - [Numeric types](#numeric-types23)
+  - [Bit manipulation](#bit-manipulation4)
     - [Multiply or divide by 2^k](#multiply-or-divide-by-2k)
     - [Change the n-th bit](#change-the-n-th-bit)
     - [Is a power of 2](#is-a-power-of-2)
     - [Is the n-th bit set](#is-the-n-th-bit-set)
   - [How-to TeX algorithms](#how-to-tex-algorithms)
-    - [Constants](#constants)
     - [Arithmetic operations](#arithmetic-operations)
     - [Comparison operations](#comparison-operations)
     - [Bitwise operations](#bitwise-operations)
-  - [Numeric types](#numeric-types23)
+    - [Constants](#constants)
 
 ## CSES Problem Set[^1]
 
@@ -37,7 +37,33 @@ solutions I have come up with and submitted to the judges
 
 ## Notes
 
-### Bit manipulation algorithms
+### Numeric types[^2][^3]
+
+[^2]: [Fundamental types](https://en.cppreference.com/w/cpp/language/types) - cppreference.com
+[^3]: [Numeric types](https://doc.rust-lang.org/reference/types/numeric.html) - The Rust Reference
+
+| C/C++ Type | Rust Type | Size    | Minimum                   | Maximum                  |
+|------------|-----------|---------|---------------------------|--------------------------|
+| uint8_t    | u8        | 8-bit   | $0$                       | $2^{8}-1$                |
+| uint16_t   | u16       | 16-bit  | $0$                       | $2^{16}-1$               |
+| uint32_t   | u32       | 32-bit  | $0$                       | $2^{32}-1$               |
+| uint64_t   | u64       | 64-bit  | $0$                       | $2^{64}-1$               |
+|            | u128      | 128-bit | $0$                       | $2^{128}-1$              |
+| int8_t     | i8        | 8-bit   | $-2^{7}$                  | $2^{7}-1$                |
+| int16_t    | i16       | 16-bit  | $-2^{15}$                 | $2^{15}-1$               |
+| int32_t    | i32       | 32-bit  | $-2^{31}$                 | $2^{31}-1$               |
+| int64_t    | i64       | 64-bit  | $-2^{63}$                 | $2^{63}-1$               |
+|            | i128      | 128-bit | $-2^{127}$                | $2^{127}-1$              |
+| size_t     | isize     | arch    |                           |                          |
+| ssize_t    | usize     | arch    |                           |                          |
+| float      | f32       | 32-bit  | $-3.40282 \cdot 10^{38}$  | $3.40282 \cdot 10^{38}$  |
+| double     | f64       | 64-bit  | $-1.79769 \cdot 10^{308}$ | $1.79769 \cdot 10^{308}$ |
+
+---
+
+### Bit manipulation[^4]
+
+[^4]: [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html) - Sean Anderson
 
 #### Multiply or divide by $2^k$
 
@@ -82,23 +108,6 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 
 ### How-to $\TeX$ algorithms
 
-#### Constants
-
-| Constant Name                     | C/C++ Syntax | Rust Syntax                 | Command        | Example        |
-|-----------------------------------|--------------|---------------------------- |----------------|----------------|
-| true                              | `true`       | `true`                      | `\top`         | $\top$         |
-| false                             | `false`      | `false`                     | `\bot`         | $\bot$         |
-| Archimedes' constant              | `M_PI`       | `std::f64::consts::PI`      | `\pi`          | $\pi$          |
-| Euler's number                    | `M_E`        | `std::f64::consts::E`       | `e`            | $e$            |
-| The full circle constant          |              | `std::f64::consts::TAU`     | `\tau`         | $\tau$         |
-| The logarithm to base ten of $e$  | `M_LOG2E`    | `std::f64::consts::LOG2_E`  | `\log_{2}{e}`  | $\log_{2}{e}$  |
-| The logarithm to base ten of $e$  | `M_LOG10E`   | `std::f64::consts::LOG10_E` | `\log_{10}{e}` | $\log_{10}{e}$ |
-| The logarithm to base two of ten  |              | `std::f64::consts::LOG2_10` | `\log_{2}{10}` | $\log_{2}{10}$ |
-| The logarithm to base ten of two  |              | `std::f64::consts::LOG10_2` | `\log_{10}{2}` | $\log_{10}{2}$ |
-| The natural logarithm of two      | `M_LN2`      | `std::f64::consts::LN_2`    | `\ln{2}`       | $\ln{2}$       |
-| The natural logarithm of ten      | `M_LN10`     | `std::f64::consts::LN_10`   | `\ln{10}`      | $\ln{10}$      |
-| The square root of two            | `M_SQRT2`    | `std::f64::consts::SQRT_2`  | `\sqrt{2}`     | $\sqrt{2}$     |
-
 #### Arithmetic operations
 
 | Operation        | C/C++ Syntax    | Rust Syntax | Command     | Example       |
@@ -126,7 +135,7 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 
 #### Bitwise operations
 
-| Operation              | C/C++ Syntax          | Rust syntax       | Command  | Example      |
+| Operation              | C/C++ Syntax          | Rust Syntax       | Command  | Example      |
 |------------------------|-----------------------|-------------------|----------|--------------|
 | *Bitwise NOT*          | `~x`                  | `!x`              | `\lnot`  | $\lnot x$    |
 | *Bitwise AND*          | `x & y`               | `x & y`           | `\land`  | $x \land y$  |
@@ -137,26 +146,19 @@ $$f(x, n) = (f_2 \circ f_1)(x, n)$$
 | *Bitwise left rotate*  | `std::rotl` **C++20** | `T::rotate_left`  | `\lll`   | $x \lll n$   |
 | *Bitwise right rotate* | `std::rotl` **C++20** | `T::rotate_right` | `\ggg`   | $x \ggg n$   |
 
----
+#### Constants
 
-### Numeric types[^2][^3]
-
-[^2]: [Fundamental types](https://en.cppreference.com/w/cpp/language/types) - cppreference.com
-[^3]: [Numeric types](https://doc.rust-lang.org/reference/types/numeric.html) - The Rust Reference
-
-| C/C++ Type | Rust Type | Size    | Minimum                   | Maximum                  |
-|-----------:|-----------|---------|---------------------------|--------------------------|
-| uint8_t    | u8        | 8-bit   | $0$                       | $2^{8}-1$                |
-| uint16_t   | u16       | 16-bit  | $0$                       | $2^{16}-1$               |
-| uint32_t   | u32       | 32-bit  | $0$                       | $2^{32}-1$               |
-| uint64_t   | u64       | 64-bit  | $0$                       | $2^{64}-1$               |
-|            | u128      | 128-bit | $0$                       | $2^{128}-1$              |
-| int8_t     | i8        | 8-bit   | $-2^{7}$                  | $2^{7}-1$                |
-| int16_t    | i16       | 16-bit  | $-2^{15}$                 | $2^{15}-1$               |
-| int32_t    | i32       | 32-bit  | $-2^{31}$                 | $2^{31}-1$               |
-| int64_t    | i64       | 64-bit  | $-2^{63}$                 | $2^{63}-1$               |
-|            | i128      | 128-bit | $-2^{127}$                | $2^{127}-1$              |
-| size_t     | isize     | arch    |                           |                          |
-| ssize_t    | usize     | arch    |                           |                          |
-| float      | f32       | 32-bit  | $-3.40282 \cdot 10^{38}$  | $3.40282 \cdot 10^{38}$  |
-| double     | f64       | 64-bit  | $-1.79769 \cdot 10^{308}$ | $1.79769 \cdot 10^{308}$ |
+| Constant                       | C/C++' `math.h` | Rust's `core::{f64, f32}::consts` | Command        | Example        |
+|--------------------------------|-----------------|-----------------------------------|----------------|----------------|
+| true                           | `true`          | `true`                            | `\top`         | $\top$         |
+| false                          | `false`         | `false`                           | `\bot`         | $\bot$         |
+| Archimedes' constant           | `M_PI`          | `PI`                              | `\pi`          | $\pi$          |
+| Euler's number                 | `M_E`           | `E`                               | `e`            | $e$            |
+| The full circle constant       |                 | `TAU`                             | `\tau`         | $\tau$         |
+| The logarithm to base 10 of e  | `M_LOG2E`       | `LOG2_E`                          | `\log_{2}{e}`  | $\log_{2}{e}$  |
+| The logarithm to base 10 of e  | `M_LOG10E`      | `LOG10_E`                         | `\log_{10}{e}` | $\log_{10}{e}$ |
+| The logarithm to base 2 of ten |                 | `LOG2_10`                         | `\log_{2}{10}` | $\log_{2}{10}$ |
+| The logarithm to base 10 of 2  |                 | `LOG10_2`                         | `\log_{10}{2}` | $\log_{10}{2}$ |
+| The natural logarithm of 2     | `M_LN2`         | `LN_2`                            | `\ln{2}`       | $\ln{2}$       |
+| The natural logarithm of 10    | `M_LN10`        | `LN_10`                           | `\ln{10}`      | $\ln{10}$      |
+| The square root of 2           | `M_SQRT2`       | `SQRT_2`                          | `\sqrt{2}`     | $\sqrt{2}$     |
